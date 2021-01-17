@@ -1,0 +1,1 @@
+copy carreras FROM '/home/maria/Escritorio/curso-latam/universidadesDemre/db/migrations/csv/carreras.csv' csv header;
