@@ -1,39 +1,26 @@
 const express = require('express')
-const morgan= require('morgan');
-const exphbs = require("express-handlebars")
 const app = express();
-//const { getUniversidades } = require ("./db/index") // teniendo las bases de datos la utilizamos
+const exphbs = require("express-handlebars")
 
 
 
-//configurnado el server
-app.set('port', process.env.PORT || 3000)
-app.set('json spaces',2)
-app.set('view engine', 'ejs')
 
-//empezando el servidor
-app.use(morgan('dev'))
-app.use(express.urlencoded({extended: false}))
-app.use(express.json())
+//pagina de inicio html
 
-//rutas
-
-app.get('/', (req,res)=>{
-    res.json({'title': 'hello word'})
+app.get("/", (req, res)=>{
+    res.sendFile("/home/erc83/weekendCode/univeridadesDemre/views/index.html")
 })
 
-app.post('/', (req,res)=>{
-    res.json({'title': 'hello word'})
-})
+// app.engine(
+//     "handlebars", exphbs({
+//         layoutDir: __dirname + "/views",
+//         partialDir: __dirname + "/views/component"
+//     })
+// );
 
-app.put('/', (req,res)=>{
-    res.json({'title': 'hello word'})
-})
+// app.set("view engine", "handlebars");
 
-app.delete('/', (req,res)=>{
-    res.json({'title': 'hello word'})
-})
 
 app.listen(3000,()=>{
-    console.log(`servidor ${app.get('port')} funcionando ok`)
+    console.log("servidor disponible localhost:3000");
 })

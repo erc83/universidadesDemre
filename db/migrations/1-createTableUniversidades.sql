@@ -3,7 +3,11 @@ DROP TABLE IF EXISTS universidades;
 CREATE TABLE universidades(
     Año INT,
     Cod_Inst INT PRIMARY KEY,
+<<<<<<< HEAD
+    Nombre_Institución VARCHAR (70),
+=======
     Nombre_Institución INT,
+>>>>>>> cbdf8cd8a0678c9ec752b4bbc3c4ee7ec584c388
     Tipo_Institución VARCHAR (10),
     Clasificación1 VARCHAR (50),
     Clasificación2 VARCHAR (50),
@@ -58,6 +62,10 @@ CREATE TABLE universidades(
     Matrícula_total_extranjero VARCHAR (5),
     Matrícula_total VARCHAR (6),
     Matrícula_total_cohorte_año_anterior VARCHAR (2),
+<<<<<<< HEAD
+    Cód_sies INT,
+=======
     Cód_sies VARCHAR (14),
+>>>>>>> cbdf8cd8a0678c9ec752b4bbc3c4ee7ec584c388
     Pregado_postgrado VARCHAR (10)
 );
