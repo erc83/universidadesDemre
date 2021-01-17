@@ -2,6 +2,8 @@ const express = require('express')
 const morgan= require('morgan');
 const exphbs = require("express-handlebars")
 const app = express();
+//const { getUniversidades } = require ("./db/index") // teniendo las bases de datos la utilizamos
+
 
 
 //configurnado el server
