@@ -1,6 +1,8 @@
 const express = require('express')
 const morgan= require('morgan');
+const exphbs = require("express-handlebars")
 const app = express();
+
 
 //configurnado el server
 app.set('port', process.env.PORT || 3000)
