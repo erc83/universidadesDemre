@@ -17,20 +17,11 @@ app.use(express.json())
 //rutas
 
 app.get('/', (req,res)=>{
-    res.json({'title': 'hello word'})
+    res.send({ 'soy la ruta raiz' })
 })
 
-app.post('/', (req,res)=>{
-    res.json({'title': 'hello word'})
-})
 
-app.put('/', (req,res)=>{
-    res.json({'title': 'hello word'})
-})
 
-app.delete('/', (req,res)=>{
-    res.json({'title': 'hello word'})
-})
 
 app.listen(3000,()=>{
     console.log(`servidor ${app.get('port')} funcionando ok`)
